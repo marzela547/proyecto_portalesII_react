@@ -1,0 +1,18 @@
+/*header{
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  padding: 0.8rem;
+  background-color: transparent;
+  color: #fff;
+}*/
+
+
+.submenu,.submenu1,.submenu2,.submenu3{
+  display: none;
+}
+.puerta:hover .submenu,.puerta1:hover .submenu1,.puerta2:hover .submenu2,.puerta3:hover .submenu3{
+  display:block;
+}
