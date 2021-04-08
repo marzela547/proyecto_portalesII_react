@@ -18,10 +18,10 @@ function BrandHeader({ children }){
       <nav className="border border-gray-600">
       <NavBar dummyData={dummy} fashon="inline-flex list-none items-center"></NavBar>
       <ul className="inline-flex "><li className="puerta relative">Catalogo
-      <ul className="submenu absolute bg-white  ">
-        <li className="puerta1 border border-gray-600">Pandora <div className="submenu1"><NavBar dummyData={dummy2}></NavBar></div></li>
-      <li className="puerta2 border border-gray-600">Rolex <div className="submenu2"><NavBar dummyData={dummy2}></NavBar></div></li>
-      <li className="puerta3 border border-gray-600">Casio <div className="submenu3"><NavBar dummyData={dummy2}></NavBar></div></li>
+      <ul className="submenu absolute bg-white py-4">
+        <li className="puerta1 border border-gray-600 p-2 relative">Pandora <NavBar dummyData={dummy2} fashon="submenu1 absolute posa border border-black"></NavBar></li>
+      <li className="puerta2 border border-gray-600 p-2 relative">Rolex <NavBar dummyData={dummy2} fashon="submenu2 absolute posa border border-black"></NavBar></li>
+      <li className="puerta3 border border-gray-600 p-2 relative">Casio <NavBar dummyData={dummy2} fashon="submenu3 absolute posa border border-black"></NavBar></li>
       </ul></li></ul>
       </nav>
       

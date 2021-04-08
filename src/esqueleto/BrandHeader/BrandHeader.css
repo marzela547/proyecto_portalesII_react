@@ -9,10 +9,21 @@
   color: #fff;
 }*/
 
-
-.submenu,.submenu1,.submenu2,.submenu3{
+.submenu{
   display: none;
 }
+.puerta:hover .submenu{
+  display: block;
+}
+.submenu1,.submenu2,.submenu3{
+  display: none;
+  background-color: #fff;
+}
+.posa{
+  top: 0px;
+  left: 100%;
+}
 .puerta:hover .submenu,.puerta1:hover .submenu1,.puerta2:hover .submenu2,.puerta3:hover .submenu3{
-  display:block;
+  display: block;  
+ 
 }
