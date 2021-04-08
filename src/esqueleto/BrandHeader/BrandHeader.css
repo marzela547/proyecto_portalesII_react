@@ -9,13 +9,7 @@
   color: #fff;
 }*/
 
-.submenu{
-  display: none;
-}
-.puerta:hover .submenu{
-  display: block;
-}
-.submenu1,.submenu2,.submenu3{
+.submenu,.submenu1,.submenu2,.submenu3{
   display: none;
   background-color: #fff;
 }
