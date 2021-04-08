@@ -3,13 +3,14 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import BrandHeader from './esqueleto/BrandHeader/BrandHeader';
 import Contacto from './esqueleto/Pages/Contact';
+import Footer from  './esqueleto/Footer/Footer';
+import History from './esqueleto/History/History'
 
 
 
 function App() {
   return (
-    
-    
+
     <Router>
     <section>
     <BrandHeader></BrandHeader>
@@ -18,14 +19,15 @@ function App() {
           <Route path="/Contact" exact>
               <Contacto></Contacto>
           </Route>
+          <Route path="/Meet" exact>
+              <History></History>
+          </Route>
         </Switch>
       </section>
+      <Footer></Footer>
     </section>
-      
     </Router>
-    
     );
-    
 }
 
 export default App;
