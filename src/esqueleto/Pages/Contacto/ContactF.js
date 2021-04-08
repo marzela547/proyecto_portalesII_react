@@ -22,7 +22,7 @@ function ContactF(){
             var uev=encodeURI(mensaje);
             var finished=`https://wa.me/50489937939?text=${uev}`;
             window.location.href=finished;
-             }}></PillButton>
+             alert("Estas siendo redirigido a nuestro whatsapp");}}></PillButton>
     </Formu>);
 }
 export default ContactF;
