@@ -1,6 +1,6 @@
 function FooterCopy(){
     return(
-        <section className="h-1/5 w-full bg-gray-900 lg:m-0  mt-20 mb-0 p-0 flex justify-between lg:text-lg text-sm text-center">
+        <section className="h-1/5 w-full bg-gray-900 lg:m-0   mb-0 p-0 flex justify-between lg:text-lg text-sm text-center">
                     <div className="text-gray-300   mx-2 ">
                         <p>&copy; Todos los Derechos Reservados | Jewelry Lovers</p>
                     </div>

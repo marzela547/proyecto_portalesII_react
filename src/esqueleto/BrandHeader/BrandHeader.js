@@ -6,6 +6,7 @@ function BrandHeader({ children }){
     { label: "Inicio", uri: "/" },
     { label: "Conocenos", uri: "/Meet"},
   {label: "Contactanos", uri: "/Contact" },
+  {label: "Agregar Productos", uri: "/Add" },
   ];
   let dummy2 = [
     { label: "Relojes", uri: "/" },
