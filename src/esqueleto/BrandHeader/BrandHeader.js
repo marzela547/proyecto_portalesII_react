@@ -3,7 +3,7 @@ import Brand from "./Brand";
 import "./BrandHeader.css";
 function BrandHeader({ children }){
   let dummy = [
-    { label: "Inicio", uri: "/" },
+    { label: "Inicio", uri: "/index" },
     { label: "Conocenos", uri: "/Meet"},
   {label: "Contactanos", uri: "/Contact" },
   {label: "Agregar Productos", uri: "/Add" },
