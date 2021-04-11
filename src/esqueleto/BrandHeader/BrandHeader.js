@@ -9,9 +9,9 @@ function BrandHeader({ children }){
   {label: "Agregar Productos", uri: "/Add" },
   ];
   let dummy2 = [
-    { label: "Relojes", uri: "/" },
-    { label: "Pulseras", uri: "/login"},
-  {label: "Collares", uri: "/linguini" }
+    { label: "Relojes", uri: "/relojes" },
+    { label: "Pulseras", uri: "/pulseras"},
+  {label: "Collares", uri: "/collares" }
   ];
   return (
     <header className="menu bg-white shadow-md text-2xl py-0 text-black">
@@ -25,8 +25,6 @@ function BrandHeader({ children }){
       <li className="puerta3 border border-gray-600 p-2 relative">Casio <NavBar dummyData={dummy2} fashon="submenu3 absolute posa border border-black"></NavBar></li>
       </ul></li></ul>
       </nav>
-      
-      
     </header>
   );
 }

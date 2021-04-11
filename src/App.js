@@ -6,7 +6,9 @@ import Contacto from './esqueleto/Pages/Contact';
 import Footer from  './esqueleto/Footer/Footer';
 import History from './esqueleto/History/History';
 import Index from './esqueleto/index/indexhtml';
-
+import Relojes from './esqueleto/Catalogos/relojes';
+import Pulseras from './esqueleto/Catalogos/pulseras';
+import Collares from './esqueleto/Catalogos/collares';
 
 function App() {
   return (
@@ -24,6 +26,15 @@ function App() {
           </Route>
           <Route path="/Meet" exact>
               <History></History>
+          </Route>
+          <Route path="/relojes" exact>
+            <Relojes></Relojes>
+          </Route>
+          <Route path="/pulseras" exact>
+            <Pulseras></Pulseras>
+          </Route>
+          <Route path="/collares" exact>
+            <Collares></Collares>
           </Route>
         </Switch>
       </section>

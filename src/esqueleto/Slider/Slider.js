@@ -68,7 +68,7 @@ const Example = (props) => {
   });
 
   return (
-    <div className="caja">
+    <div className="caja lg:mx-auto">
       <Carousel activeIndex={activeIndex} next={next} previous={previous}>
         <CarouselIndicators
           items={items}

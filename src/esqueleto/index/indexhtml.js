@@ -1,4 +1,4 @@
-import Example from '../Slider/Slider'
+import Example from '../Slider/Slider';
 
 function Index(){
     return(
