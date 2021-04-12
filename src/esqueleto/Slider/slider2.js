@@ -7,13 +7,13 @@ import {
   CarouselCaption,
 } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../Slider/slider.css';
+import '../Slider/slider.css'
 
 let p1, p2, p3;
 
-function Example (pic) {
+function Fotos (pic2){
 
-  const prueba = Object.values(pic);
+  const prueba = Object.values(pic2);
  if(prueba.length>0){
     prueba.map((o)=>{
       p1= o.producto1;
@@ -38,7 +38,7 @@ function Example (pic) {
   const [animating, setAnimating] = useState(false);
 
   const next = () => {
-    if (animating) return;
+     if (animating) return;
     const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
     setActiveIndex(nextIndex);
   };
@@ -57,8 +57,6 @@ function Example (pic) {
   const slides = items.map((item) => {
     return (
       <CarouselItem
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}
         key={item.src}
       >
         <img src={item.src} alt={item.altText} width="100%" />
@@ -71,8 +69,8 @@ function Example (pic) {
   });
 
   return (
-    <div className=" w-full min-h-0 lg:mx-auto">
-      <Carousel activeIndex={activeIndex} next={next} previous={previous}>
+    <div className=" w-80 h-80 z-0 lg:mx-auto">
+      <Carousel activeIndex={activeIndex}>
         <CarouselIndicators
           items={items}
           activeIndex={activeIndex}
@@ -94,4 +92,4 @@ function Example (pic) {
   );
 };
 
-export default Example;
+export default Fotos;

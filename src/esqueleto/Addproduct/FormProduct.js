@@ -1,3 +1,71 @@
+import { Input } from "reactstrap";
+
+const cloudPreset = 'edpun0xj';
+const cloudUrl    = 'https://api.cloudinary.com/v1_1/defil6trk/upload';
+
+const file = event.target.files[0];
+
+const eventos = () => {
+    Input.addEventListener('change', (event) => {
+    let tam, arriba;
+     if(screen.width >750)
+        {
+            tam= '8em';
+            arriba= '3';
+         }
+     else
+         {
+             tam= '4em';
+             arriba= '0';
+         }
+
+        const file = event.target.files[0];
+         console.log(file);
+        subirImagen( file ).then( url => imgFoto.src = url
+         /*divInterno.style.display='none',
+         divExterno.style.height=tam,
+         divExterno.style.zIndex=arriba,
+         divExterno.style.marginTop = '40px',
+         deco.style.marginTop='50px',
+         basurerito.style.display= 'block',
+         imgFoto.style.display='block'*/);
+
+     });
+
+ }
+
+  const init = () => {
+     eventos();
+ }
+ init();
+
+const subirImagen = async( archivoSubir ) => {
+
+    const formData = new FormData();
+    formData.append('upload_preset', cloudPreset );
+    formData.append('file', archivoSubir );
+
+    try {
+        const resp = await fetch( cloudUrl, {
+            method: 'POST',
+            body: formData
+        });
+
+        if ( resp.ok ) {
+            const cloudResp = await resp.json();
+            return cloudResp.secure_url;
+        } else {
+            //eliminarIma();
+            throw await resp.json();
+
+        }
+
+    } catch( err ) {
+        throw err;
+    }
+
+}
+
 function Formu({ }) {
     return (
         <form className="  relative my-3 mx-8 justify-center w-auto h-auto lg:w-2/8 lg:mt-5 flex lg:mr-5 lg:flex-wrap lg:align-middle">
@@ -40,7 +108,7 @@ function Formu({ }) {
                   <div id="bexterior" className=" h-10 text-center align-middle flex border bg-gray-300  w-full lg:h-12">
                   <div id="binterior" className="  lg:w-64 w-full m-1 lg:m-2  h-8 border-dashed border-gray-500 border border-collapse">
                             <p className="text-xs mt-2 w-full overflow-hidden">Pulsa aquí para añadir una imagen</p>
-                            <input className="relative bottom-6 max-w-full z-0 opacity-0 " type="file" name="foto" id="foto" accept="image/png, image/jpg"/>
+                            <input className="relative bottom-6 max-w-full z-0 opacity-0 " onClick={(e)=>subirImagen(file)}  type="file" name="foto" id="foto" accept="image/png, image/jpg"/>
                         </div>
 
                     </div>
@@ -59,22 +127,3 @@ function Formu({ }) {
 }
 
 export default Formu;
-/*                <div className="my-10 mx-0 h-12 w-full flex align-middle lg:w-64 lg:48 ">
-                  <div id="bexterior" className="w-full h-24 text-center flex border-collapse bg-gray-200 border-gray-500">
-                        <div id="binterior">
-                            <p>Pulsa aquí para añadir una imagen</p>
-                            <input type="file" name="foto" id="foto" accept="image/png, image/jpg"/>
-                    </div>
-                    <img id="imag" src=""></img>
-                    <button type="button" id="basu" onclick="eliminarIma()"> <ion-icon name="trash-outline" id="basurerito"></ion-icon> </button>
-                    </div>
-                </div>  
-                
-                
-                
-                
-                                <div  class="m-2 h-12 w-full block  bg-gray-400">
-                    <label for="txtLongText">Descripción del Producto</label><br/>
-                    <textarea id="txtLongText" nam e="txtLongText" rows="20" placeholder="Descripción del producto"  className="w-full border border-gray-400" required></textarea>
-                    <br/>
-                </div>*/

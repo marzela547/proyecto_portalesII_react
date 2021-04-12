@@ -1,6 +1,12 @@
-import Example from '../Slider/Slider';
+import Example from '../Slider/slider2';
+import React,{ useState } from 'react';
+import producto1 from '../img/1.7.png';
+import producto2 from '../img/reloj6.jpg';
+import producto3 from '../img/9.2.png';
+
 
 function Index(){
+    const [pics, setPics]= useState({producto1, producto2, producto3});
     return(
     <section   className="lg:flex block w-full font-sans content-center">
         <section className="lg:w-2/4 w-full text-justify m-8">
@@ -25,7 +31,7 @@ function Index(){
             </p>
         </section>
         <section className="pt-4 pl-10 mt-2 ml-10">
-            <Example></Example>
+            <Example pic2={pics}></Example>
         </section>
     </section>
     );

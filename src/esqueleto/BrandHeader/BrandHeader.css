@@ -18,6 +18,5 @@
   left: 100%;
 }
 .puerta:hover .submenu,.puerta1:hover .submenu1,.puerta2:hover .submenu2,.puerta3:hover .submenu3{
-  display: block;  
- 
+  display: block;
 }

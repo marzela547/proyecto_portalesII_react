@@ -1,7 +1,7 @@
-import logo from "../Imgs/Logo.png";
-import hogar from "../Imgs/hogar.png";
-import telefono from "../Imgs/smartphone.png";
-import sobre from "../Imgs/sobre.png";
+import logo from "../img/Logo.png";
+import hogar from "../img/hogar.png";
+import telefono from "../img/smartphone.png";
+import sobre from "../img/sobre.png";
 import FooterSocial from "./FooterSocial";
 
 

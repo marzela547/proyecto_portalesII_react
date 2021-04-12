@@ -3,7 +3,7 @@ import '../login/login.css';
 function login() {
     return (
           <div class="login-box">
-            <img src="../Imgs/pandora-monograma.jpg" class="Persona" alt="Avatar" />
+            <img src="../img/pandora-monograma.jpg" class="Persona" alt="Avatar" />
             <h1>Bienvenido(a)</h1>
             <br/>
               <label for="username">Usuario</label>

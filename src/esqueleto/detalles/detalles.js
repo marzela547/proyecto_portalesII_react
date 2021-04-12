@@ -7,9 +7,9 @@ import {
   CarouselCaption,
 } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import img1 from '../Imgs/0.1-min.png';
-import img2 from '../Imgs/0.2-min.png';
-import img3 from '../Imgs/0.8.jpg';
+import img1 from '../img/0.1-min.png';
+import img2 from '../img/0.2-min.png';
+import img3 from '../img/0.8.jpg';
 import './detalles.css';
 
 const items = [

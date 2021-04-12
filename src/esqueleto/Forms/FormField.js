@@ -1,8 +1,8 @@
 function FormField({ value, type, id, fname, onChange, caption, error, ...attr }) {
-    var myClasses = ["text-xl", "font-semibold"];
-    var inputcss = ["w-full", "rounded-lg","border","border-black","m-1"];
+    var myClasses = ["text-xl", "m-0"];
+    var inputcss = ["w-full","h-10" ,"rounded-lg","border","border-black", "m-1"];
     return (
-        <section className="flex">
+        <section className="row">
             <label className={myClasses.join(" ")}>{caption}</label>
             <input
                 type={type}
