@@ -1,44 +1,33 @@
 import { Input } from "reactstrap";
+import React, { useState } from "react";
+import ReactDOM from 'react-dom';
+import App from '../../App';
 
 const cloudPreset = 'edpun0xj';
 const cloudUrl    = 'https://api.cloudinary.com/v1_1/defil6trk/upload';
+let imgFoto, imgStyle="hidden";
 
-const file = event.target.files[0];
+const onChange = (e) => {
+    const file = e.target.files[0];
+    console.log(file);
+    subirImagen(file).then(url => imgFoto=url,
+        console.log(imgFoto));
 
-const eventos = () => {
-    Input.addEventListener('change', (event) => {
-    let tam, arriba;
-     if(screen.width >750)
-        {
-            tam= '8em';
-            arriba= '3';
-         }
-     else
-         {
-             tam= '4em';
-             arriba= '0';
-         }
+   //const arreglo = [1,2,3];
+    /*const settings = <Formu interno="hidden"
+    externo="lg:h-28"/> ESTE HACE QUE SE CAMBIEN LOS VALORES DE LAS CLASES*/
+   // setClase(arreglo);
+   // <App prueba={clase}/>
+   // ReactDOM.render(settings, document.getElementById('root'));
+}
 
-        const file = event.target.files[0];
-         console.log(file);
-        subirImagen( file ).then( url => imgFoto.src = url
-         /*divInterno.style.display='none',
-         divExterno.style.height=tam,
-         divExterno.style.zIndex=arriba,
-         divExterno.style.marginTop = '40px',
-         deco.style.marginTop='50px',
-         basurerito.style.display= 'block',
-         imgFoto.style.display='block'*/);
-
-     });
-
- }
-
-  const init = () => {
-     eventos();
- }
- init();
-
+/*divInterno.style.display='none',
+             divExterno.style.height=tam,
+             divExterno.style.zIndex=arriba,
+             divExterno.style.marginTop = '40px',
+             deco.style.marginTop='50px',
+             basurerito.style.display= 'block',
+             imgFoto.style.display='block'*/
 const subirImagen = async( archivoSubir ) => {
 
     const formData = new FormData();
@@ -66,13 +55,16 @@ const subirImagen = async( archivoSubir ) => {
 
 }
 
-function Formu({ }) {
+function Formu(props) {
+
+   //let [clase, setClase]= useState({a:0,b:3});
+
     return (
         <form className="  relative my-3 mx-8 justify-center w-auto h-auto lg:w-2/8 lg:mt-5 flex lg:mr-5 lg:flex-wrap lg:align-middle">
             <fieldset className="border rounded-md  relative w-full h-full bg-red-200 flex flex-wrap " >
                 <div className="my-2 mx-2 h-12 w-full block lg:w-2/4 ">
                     <label for="txtproducto">Nombre del Producto</label>
-                    <input type="text" name="txtproducto" id="txtproducto" className="w-full border border-gray-400"  placeholder="Anillo Fantasy" required />
+                    <input type="text" name="txtproducto" id="txtproducto" className="w-full border border-gray-400 "  placeholder="Anillo Fantasy" required />
                     <span id="txtproductoerror" className="hidden "></span>
                     <br/>
                 </div>
@@ -105,12 +97,12 @@ function Formu({ }) {
                     <br/>
                 </div>
                 <div className="flex  h-12 w-full lg:w-72 m-2 border-gray-900 ">
-                  <div id="bexterior" className=" h-10 text-center align-middle flex border bg-gray-300  w-full lg:h-12">
-                  <div id="binterior" className="  lg:w-64 w-full m-1 lg:m-2  h-8 border-dashed border-gray-500 border border-collapse">
+                  <div id="bexterior" className={` h-10 text-center align-middle flex border bg-gray-300  w-full lg:h-12  ${ props.externo}`}>
+                  <div id="binterior" className={`lg:w-64 w-full m-1 lg:m-2  h-8 border-dashed border-gray-500 border border-collapse ${props.interno}`}>
                             <p className="text-xs mt-2 w-full overflow-hidden">Pulsa aquí para añadir una imagen</p>
-                            <input className="relative bottom-6 max-w-full z-0 opacity-0 " onClick={(e)=>subirImagen(file)}  type="file" name="foto" id="foto" accept="image/png, image/jpg"/>
+                            <input className="relative bottom-9 max-w-full h-full z-0 opacity-0" onChange={(e)=>onChange(e)} type="file" name="foto" id="foto" accept="image/png, image/jpg"/>
                         </div>
-
+                        <img className={imgStyle} src={imgFoto}></img>
                     </div>
                 </div>
                 <div  className="w-full h-32 m-2 mb-8">

@@ -22,6 +22,8 @@ function App() {
     setTypePage({...typePage, data})
   }*/
   //const setPages;
+  //console.log("Aqui");
+
 
   return (
 
@@ -40,7 +42,7 @@ function App() {
               <History></History>
           </Route>
           <Route path="/Add" exact>
-            <Add></Add>
+            <Add ></Add>
           </Route>
           <Route path="/Details" exact>
             <Detalles></Detalles>
