@@ -6,19 +6,27 @@ import App from '../../App';
 const cloudPreset = 'edpun0xj';
 const cloudUrl    = 'https://api.cloudinary.com/v1_1/defil6trk/upload';
 let imgFoto, imgStyle="hidden";
-
-const onChange = (e) => {
+let divInter;
+const Evento = (e) => {
+    //
     const file = e.target.files[0];
     console.log(file);
-    subirImagen(file).then(url => imgFoto=url,
+
+    //setClase({divInterno: "hidden"});
+    //console.log(clase);
+subirImagen(file).then(url => imgFoto=url,
         console.log(imgFoto));
 
-   //const arreglo = [1,2,3];
-    /*const settings = <Formu interno="hidden"
-    externo="lg:h-28"/> ESTE HACE QUE SE CAMBIEN LOS VALORES DE LAS CLASES*/
-   // setClase(arreglo);
-   // <App prueba={clase}/>
-   // ReactDOM.render(settings, document.getElementById('root'));
+//const arreglo = [1,2,3];
+    //const settings =  /*ESTE HACE QUE SE CAMBIEN LOS VALORES DE LAS CLASES*/
+// setClase(arreglo);
+// <App prueba={clase}/>
+ //ReactDOM.render(<App>settings</App>, document.getElementById('root'));
+}
+/*
+const presionar = () =>{
+    <Formu interno="hidden bg-gray-800"
+    externo="lg:h-28"/>
 }
 
 /*divInterno.style.display='none',
@@ -57,7 +65,10 @@ const subirImagen = async( archivoSubir ) => {
 
 function Formu(props) {
 
+   // const [clase, setClase] = useState("");
+
    //let [clase, setClase]= useState({a:0,b:3});
+    //console.log(props);
 
     return (
         <form className="  relative my-3 mx-8 justify-center w-auto h-auto lg:w-2/8 lg:mt-5 flex lg:mr-5 lg:flex-wrap lg:align-middle">
@@ -97,10 +108,10 @@ function Formu(props) {
                     <br/>
                 </div>
                 <div className="flex  h-12 w-full lg:w-72 m-2 border-gray-900 ">
-                  <div id="bexterior" className={` h-10 text-center align-middle flex border bg-gray-300  w-full lg:h-12  ${ props.externo}`}>
+                  <div id="bexterior" className={` h-10 text-center align-middle flex border bg-gray-300  w-full lg:h-12  ${props.externo}`}>
                   <div id="binterior" className={`lg:w-64 w-full m-1 lg:m-2  h-8 border-dashed border-gray-500 border border-collapse ${props.interno}`}>
                             <p className="text-xs mt-2 w-full overflow-hidden">Pulsa aquí para añadir una imagen</p>
-                            <input className="relative bottom-9 max-w-full h-full z-0 opacity-0" onChange={(e)=>onChange(e)} type="file" name="foto" id="foto" accept="image/png, image/jpg"/>
+                            <input className="relative bottom-9 max-w-full h-full z-0 opacity-0" onChange={(e)=>Evento(e)} type="file" name="foto" id="foto" accept="image/png, image/jpg"/>
                         </div>
                         <img className={imgStyle} src={imgFoto}></img>
                     </div>

@@ -8,7 +8,7 @@ function BrandHeader({ setType }){
     { label: "Inicio", uri: "/index" },
     { label: "Conócenos", uri: "/Meet"},
   {label: "Contáctanos", uri: "/Contact" },
-  {label: "Agregar Productos", uri: "/Add" },
+  {label: "Agregar Productos", uri: "/Add" }
   ];
   let dummy2 = [
     { label: "Relojes", uri: "/Relojes" },

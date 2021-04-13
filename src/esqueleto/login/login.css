@@ -1,11 +1,11 @@
-body {
+.cuerpo {
     margin: 0;
     padding: 0;
-   background: url(../Imgs/ima1.jpg) no-repeat center #ffd5dcb2;
+   background: url(../img/ima1.jpg) no-repeat center #ffd5dcb2;
     font-family: sans-serif;
     height: 100vh;
   }
-  
+
   .login-box {
     width: 320px;
     height: 420px;
@@ -20,7 +20,7 @@ body {
     border: #000 solid 5px;
     padding: 70px 30px;
   }
-  
+
   .login-box .Persona {
     width: 100px;
     height: 100px;

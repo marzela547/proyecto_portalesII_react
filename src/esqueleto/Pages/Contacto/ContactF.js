@@ -9,7 +9,7 @@ function ContactF(){
         <br></br>
         <FormField type="text" id="txtape" fname="lname" caption="Apellido" required></FormField>
         <br></br>
-        <label for="product">Selecciona un producto </label>
+        <label  for="product">Selecciona un producto </label>
             <select className="w-full h-12" name="product" id="product">
                 <option value="Relojes">Relojes</option>
                 <option value="Collares">Collares</option>
