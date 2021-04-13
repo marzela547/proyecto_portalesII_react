@@ -1,9 +1,8 @@
 import  Fotos from '../Slider/slider2';
-import './catalogos.css';
 import React,{ useState } from 'react';
-import producto1 from '../img/0.1-min.png';
-import producto2 from '../img/0.2-min.png';
-import producto3 from '../img/0.3-min.png';
+import producto1 from '../../img/0.1-min.png';
+import producto2 from '../../img/0.2-min.png';
+import producto3 from '../../img/0.3-min.png';
 import { NavLink } from 'react-router-dom';
 
 

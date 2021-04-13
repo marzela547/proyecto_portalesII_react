@@ -1,7 +1,7 @@
 import '../login/login.css';
 import ReactDOM from 'react-dom';
 import General from '../../General';
-import avatar from '../img/pandora-monograma.jpg';
+import avatar from '../../img/pandora-monograma.jpg';
 
 const Llamado=(e)=>{
   ReactDOM.render(<General></General>, document.getElementById('root'));
@@ -10,7 +10,7 @@ const Llamado=(e)=>{
 function login() {
     return (
          <section className="cuerpo">
-            <div class="login-box">
+            <div class="login-box ">
             <img src={avatar} class="Persona" alt="Avatar" />
             <h1>Bienvenido(a)</h1>
             <br/>

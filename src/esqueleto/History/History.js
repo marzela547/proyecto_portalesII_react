@@ -1,7 +1,7 @@
-import img1 from "../img/0.1-min.png";
-import img2 from "../img/0.2-min.png";
-import img3 from "../img/0.3-min.png";
-import img4 from "../img/0.4-min.png";
+import img1 from "../../img/0.1-min.png";
+import img2 from "../../img/0.2-min.png";
+import img3 from "../../img/0.3-min.png";
+import img4 from "../../img/0.4-min.png";
 function history(){
     return(
         <section   className="lg:flex block w-full font-sans">

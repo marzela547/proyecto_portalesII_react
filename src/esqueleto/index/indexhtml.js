@@ -1,8 +1,8 @@
 import Example from '../Slider/slider2';
 import React,{ useState } from 'react';
-import producto1 from '../img/1.7.png';
-import producto2 from '../img/reloj6.jpg';
-import producto3 from '../img/9.2.png';
+import producto1 from '../../img/1.7.png';
+import producto2 from '../../img/reloj6.jpg';
+import producto3 from '../../img/9.2.png';
 
 
 function Index(){
