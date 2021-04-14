@@ -5,7 +5,7 @@ import "./BrandHeader.css";
 
 function BrandHeader({ setType }){
   let dummy = [
-    { label: "Inicio", uri: "/index" },
+    { label: "Inicio", uri: "/" },
     { label: "Conócenos", uri: "/Meet"},
   {label: "Contáctanos", uri: "/Contact" },
   {label: "Agregar Productos", uri: "/Add" }

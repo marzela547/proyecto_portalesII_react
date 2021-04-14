@@ -21,7 +21,7 @@ function General(){
         <BrandHeader ></BrandHeader>
         <section>
           <Switch>
-              <Route path="/index" exact>
+              <Route path="/" exact>
                 <Index></Index>
               </Route>
               <Route path="/Contact" exact>
