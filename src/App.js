@@ -25,7 +25,7 @@ function App() {
     ReactDOM.render(<App/>, document.getElementById('root'));
   }*/
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path="/">
           <Login></Login>
