@@ -6,7 +6,7 @@ import producto3 from '../../img/9.2.png';
 
 
 function Index(){
-    const [pics, setPics]= useState({producto1, producto2, producto3});
+    const pics= [producto1, producto2, producto3];
     return(
     <section   className="lg:flex block w-full font-sans content-center">
         <section className="lg:w-2/4 w-full text-justify m-8">
