@@ -16,7 +16,7 @@ import Detalles from './esqueleto/detalles/detalles';
 
 function General(){
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <section>
         <BrandHeader ></BrandHeader>
         <section>

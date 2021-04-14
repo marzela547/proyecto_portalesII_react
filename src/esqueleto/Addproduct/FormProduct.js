@@ -14,7 +14,7 @@ const Evento = (e) => {
 
     //setClase({divInterno: "hidden"});
     //console.log(clase);
-subirImagen(file).then(url => imgFoto=url,
+    subirImagen(file).then(url => imgFoto=url,
         console.log(imgFoto));
 
 //const arreglo = [1,2,3];

@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/proyecto_portalesII_react/static/css/main.01cd2bfa.chunk.css",
-    "main.js": "/proyecto_portalesII_react/static/js/main.e9b4a356.chunk.js",
-    "main.js.map": "/proyecto_portalesII_react/static/js/main.e9b4a356.chunk.js.map",
+    "main.js": "/proyecto_portalesII_react/static/js/main.56ebbaef.chunk.js",
+    "main.js.map": "/proyecto_portalesII_react/static/js/main.56ebbaef.chunk.js.map",
     "runtime-main.js": "/proyecto_portalesII_react/static/js/runtime-main.9cc0b5e2.js",
     "runtime-main.js.map": "/proyecto_portalesII_react/static/js/runtime-main.9cc0b5e2.js.map",
     "static/css/2.737e53d6.chunk.css": "/proyecto_portalesII_react/static/css/2.737e53d6.chunk.css",
-    "static/js/2.6cb3005b.chunk.js": "/proyecto_portalesII_react/static/js/2.6cb3005b.chunk.js",
-    "static/js/2.6cb3005b.chunk.js.map": "/proyecto_portalesII_react/static/js/2.6cb3005b.chunk.js.map",
+    "static/js/2.6db25eee.chunk.js": "/proyecto_portalesII_react/static/js/2.6db25eee.chunk.js",
+    "static/js/2.6db25eee.chunk.js.map": "/proyecto_portalesII_react/static/js/2.6db25eee.chunk.js.map",
     "static/js/3.439aec0b.chunk.js": "/proyecto_portalesII_react/static/js/3.439aec0b.chunk.js",
     "static/js/3.439aec0b.chunk.js.map": "/proyecto_portalesII_react/static/js/3.439aec0b.chunk.js.map",
     "index.html": "/proyecto_portalesII_react/index.html",
     "static/css/2.737e53d6.chunk.css.map": "/proyecto_portalesII_react/static/css/2.737e53d6.chunk.css.map",
     "static/css/main.01cd2bfa.chunk.css.map": "/proyecto_portalesII_react/static/css/main.01cd2bfa.chunk.css.map",
-    "static/js/2.6cb3005b.chunk.js.LICENSE.txt": "/proyecto_portalesII_react/static/js/2.6cb3005b.chunk.js.LICENSE.txt",
+    "static/js/2.6db25eee.chunk.js.LICENSE.txt": "/proyecto_portalesII_react/static/js/2.6db25eee.chunk.js.LICENSE.txt",
     "static/media/0.1-min.35dbb72b.png": "/proyecto_portalesII_react/static/media/0.1-min.35dbb72b.png",
     "static/media/0.2-min.c5641e4e.png": "/proyecto_portalesII_react/static/media/0.2-min.c5641e4e.png",
     "static/media/0.3-min.0c3a5d74.png": "/proyecto_portalesII_react/static/media/0.3-min.0c3a5d74.png",
@@ -32,14 +32,16 @@
     "static/media/pandora-monograma.0248a7e2.jpg": "/proyecto_portalesII_react/static/media/pandora-monograma.0248a7e2.jpg",
     "static/media/reloj1.3a1d8d85.jpg": "/proyecto_portalesII_react/static/media/reloj1.3a1d8d85.jpg",
     "static/media/reloj2.3b523340.jpg": "/proyecto_portalesII_react/static/media/reloj2.3b523340.jpg",
+    "static/media/reloj3.0bacaf7a.jpg": "/proyecto_portalesII_react/static/media/reloj3.0bacaf7a.jpg",
+    "static/media/reloj4.db0a2810.jpg": "/proyecto_portalesII_react/static/media/reloj4.db0a2810.jpg",
     "static/media/reloj5.0bcaf5c9.jpg": "/proyecto_portalesII_react/static/media/reloj5.0bcaf5c9.jpg",
     "static/media/reloj6.db86a2f7.jpg": "/proyecto_portalesII_react/static/media/reloj6.db86a2f7.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.9cc0b5e2.js",
     "static/css/2.737e53d6.chunk.css",
-    "static/js/2.6cb3005b.chunk.js",
+    "static/js/2.6db25eee.chunk.js",
     "static/css/main.01cd2bfa.chunk.css",
-    "static/js/main.e9b4a356.chunk.js"
+    "static/js/main.56ebbaef.chunk.js"
   ]
 }

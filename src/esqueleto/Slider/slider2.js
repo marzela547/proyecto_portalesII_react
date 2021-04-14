@@ -11,16 +11,16 @@ import '../Slider/slider.css'
 
 let p1, p2, p3;
 
-function Fotos (pic2){
+function Fotos ({pic2}){
 
-  const prueba = Object.values(pic2);
- if(prueba.length>0){
-    prueba.map((o)=>{
-      p1= o.producto1;
-      p2 = o.producto2;
-      p3= o.producto3;
-    })
- }
+  //const prueba = Object.values(pic2);
+ //if(prueba.length>0){
+   // prueba.map((o)=>{
+      p1= pic2[0];
+      p2 = pic2[1];
+      p3= pic2[2];
+   // })
+ //}
 
   const items = [
     {
@@ -54,10 +54,10 @@ function Fotos (pic2){
     setActiveIndex(newIndex);
   };
 
-  const slides = items.map((item) => {
+  const slides = items.map((item,i) => {
     return (
       <CarouselItem
-        key={item.src}
+        key={i}
       >
         <img src={item.src} alt={item.altText} width="100%" />
         <CarouselCaption
